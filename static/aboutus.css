@@ -1,0 +1,83 @@
+body{
+    background-image: url(/static/aboutus.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+  .heading{
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    background-image: url(/static/symbol.png);
+    background-size: 50px auto; 
+    background-position: 30px center;
+    background-repeat: no-repeat; 
+  }
+  .topic{
+    margin-left: 100px;
+    margin-top: -27px;
+    font-weight: bolder;
+    color: white;
+  }
+  .subheading{
+    margin-left: 100px;
+    margin-top: -15px;
+    color: white;
+    font-size:x-small;
+  }
+  nav a{
+    color: white;
+    text-decoration: none;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    margin: 15px;
+    margin-top: 30px;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 40px;
+    position: relative;
+    top: 0; 
+    font-weight: bold;
+  }
+  h1{
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+  }
+  p{
+    text-align: left;
+    color: black;
+    font-size: larger;
+    margin-right:50px;
+    margin-left: 50px;
+  }
+  dl{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .accuracycomparison{
+    width: 500px;
+    height: 300px;
+  }
+  .accuracydiagram
+  {
+    width: 500px;
+    height: 300px;
+  }
+  .precisiondiagram
+  {
+    width: 500px;
+    height: 300px;
+  }
+  .recalldiagram{
+    width: 500px;
+    height: 300px;
+  }
+  .cmrf{
+    width: 500px;
+    height: 300px;
+  }

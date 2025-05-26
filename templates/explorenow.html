@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction</title>
+    <link rel="stylesheet" href="/static/explorenow.css" />
+    <script src="/static/main.js"></script>
+  </head>
+  <body>
+    <nav class="heading">
+      <ul class="right-align">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
+        <li><a href="/contactus">Contact us</a></li>
+      </ul>
+      <h3 class="topic">CROP INTELLECT</h3>
+      <p class="subheading">MACHINE LEARNING DRIVEN CROP RECOMMENDATION</p>
+    </nav>
+
+    <div class="content-container">
+      <h1 class="quotes">
+        "We farm the soil,<br />
+        and the soil grows the crop."
+      </h1>
+
+      <div class="values">
+        <form id="prediction-form" action="/explorenow" method="post">
+          <table>
+            <tr>
+              <td><label for="nitrogen">Nitrogen:</label></td>
+              <td><input type="text" name="nitrogen" placeholder="in mg" /></td>
+            </tr>
+            <tr>
+              <td><label for="phosphorus">Phosphorus:</label></td>
+              <td><input type="text" name="phosphorus" placeholder="in mg" /></td>
+            </tr>
+            <tr>
+              <td><label for="potassium">Potassium:</label></td>
+              <td><input type="text" name="potassium" placeholder="in mg" /></td>
+            </tr>
+            <tr>
+              <td><label for="temperature">Temperature:</label></td>
+              <td><input type="text" name="temperature" placeholder="in °C" /></td>
+            </tr>
+            <tr>
+              <td><label for="humidity">Humidity:</label></td>
+              <td><input type="text" name="humidity" placeholder="in %" /></td>
+            </tr>
+            <tr>
+              <td><label for="soil_pH">Soil pH:</label></td>
+              <td><input type="text" name="soil_pH" placeholder="pH" /></td>
+            </tr>
+            <tr>
+              <td><label for="rainfall">Rainfall:</label></td>
+              <td><input type="text" name="rainfall" placeholder="in mm" /></td>
+            </tr>
+          </table>
+        </form>
+        <button class="button-84" onclick="predict()"><b>Predict</b></button>
+      </div>
+    </div>
+
+    <div id="prediction-result"></div>
+  </body>
+</html>
