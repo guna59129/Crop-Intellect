@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
-model = joblib.load(r"C:\Users\guna5\OneDrive\Desktop\CROP INTELLECT(Project)\crop_recommendation_model.pkl")
+model = joblib.load("crop_recommendation_model.pkl")
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
