@@ -8,7 +8,7 @@ load_dotenv()
 
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
-model = joblib.load(r"C:\Users\guna5\OneDrive\Desktop\CROP INTELLECT(Project)\crop_recommendation_model.pkl")
+model = joblib.load("crop_recommendation_model.pkl")
 
 db = mysql.connector.connect(
     host=os.environ.get('DB_HOST'),
